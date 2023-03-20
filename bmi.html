@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" 
+		  content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" 
+		  content="ie=edge" />
+    <title>Gym | BMI Calculation</title>
+    <link 	rel="stylesheet" 
+			href="css/style.css" />
+</head>
+<body>
+    <header class="header">	<!--	Begin <header> section	-->
+        <nav>
+            <div class="navigation-bar">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="bmi.html">BMI</a></li>
+					<li><a href="game.html">Game</a></li>
+				</ul>
+			</div>
+			</div>
+        </nav>
+    </header>				<!--	End   <header> section	-->
+	
+    <main 		class="bmi">
+        <h1 	class="bmiHeader">BMI Calculator</h1>
+		
+		<div id="bmiFormDiv">
+			<form 	class="form"
+					method="get"
+					action="">      
+				<label 	class="bmiLabel"
+						for="height">Height:
+				</label>
+				<input 	type="number"
+						name="height"
+						min="12"				
+						max="96"
+						id="height" 
+						class="bmiTextBox"/><br><br>
+				
+				<label 	class="bmiLabel"
+						for="weight">Weight:
+				</label> 
+				<input 	type="number"
+						name="weight"
+						min="1"
+						max="777"
+						id="weight" 
+						class="bmiTextBox"/><br><br>
+				
+				<input 	type="button" 
+						value="Calculate" 
+						name="calculate" 
+						id="calculate" />
+				
+				<input 	type="button"
+						value="Reset Form"
+						name="clearForm" 
+						id="clearForm" /><br /><br />
+
+				<label class="bmiLabel">BMI:</label>        
+				<input 	type="text" 
+						id="result" 
+						class="bmiTextBox"
+						disabled /><br /><br />
+						
+				<label class="bmiLabel">Status:</label>    
+				<input 	type="text" 
+						id="status"
+						class="bmiTextBox"
+						disabled /><br />
+			</form>
+		</div>
+    </main>
+
+    <footer class="footer">
+        <div>
+            &copy; 2023 Ranken Technical College - AWD Program
+        </div>
+    </footer>
+	
+    <script type="text/javascript" src="js/bmi.js"></script>
+</body>
+
+</html>
